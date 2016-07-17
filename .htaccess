@@ -1,0 +1,3 @@
+RewriteEngine On 
+#微信支付异步通知伪静态规则
+RewriteRule ^/notify_url/hash/(.*)/out_trade_no/(.*)$ /index.php?s=/Home/Api/notify_url&hash=$1&out_trade_no=$2 
